@@ -30,8 +30,8 @@ jobs:
       - name: build pages
         uses: actions/jekyll-build-pages@v1.0.13
         with:
-          source: ${{ github.workspace }}
-          destination: ${{ github.workspace }}/_site
+          source: .
+          destination: ./_site
 
       - name: upload artifact
         uses: actions/upload-pages-artifact@v5.0.0
