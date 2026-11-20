@@ -6,11 +6,17 @@ This is a simple website for myself, built using **Jekyll**, **HTML**, and **CSS
 
 The project includes the following folders and files (excluding those specified in `.gitignore`):
 
-- `index.html` - The main page of the website.
+- `.github/` - GitHub relevant resources.
+  - `workflows/` - GitHub workflows.
+    - `deploy.yml` - Deployment workflow.
+- `src/` - Contains the website source files.
+  - `_layouts/` - Folder containing Jekyll layout templates.
+  - `_includes/` - Folder containing reusable HTML snippets.
+  - `assets/` - Folder containing static assets like images, fonts, and JavaScript files.
+  - `index.html` - The main page of the website.
 - `CNAME` - The domain-binding file for your website's domain.
-- `_layouts/` - Folder containing Jekyll layout templates.
-- `_includes/` - Folder containing reusable HTML snippets.
-- `assets/` - Folder containing static assets like images, fonts, and JavaScript files.
+- `compose.sh` - Starts `compose.yml` and removes the stopped container.
+- `compose.yml` - Runs Jekyll via `podman` for website development.
 
 ## 📚 Features
 

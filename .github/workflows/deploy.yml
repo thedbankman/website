@@ -6,10 +6,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - _includes/**
-      - _layouts/**
-      - assets/**
-      - index.html
+      - src/**
   workflow_dispatch:
 
 permissions:
@@ -35,7 +32,7 @@ jobs:
       - name: build pages
         uses: actions/jekyll-build-pages@v1.0.13
         with:
-          source: .
+          source: ./src
           destination: ./_site
 
       - name: upload artifact
