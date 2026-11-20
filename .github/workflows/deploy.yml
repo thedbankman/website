@@ -5,6 +5,11 @@ on:
     - cron: 0 0 1 * *
   push:
     branches: [ main ]
+    paths:
+      - _includes/**
+      - _layouts/**
+      - assets/**
+      - index.html
   workflow_dispatch:
 
 permissions:
