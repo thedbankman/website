@@ -1,0 +1,11 @@
+{
+    "name": "local development",
+    "dockerComposeFile": "../compose.yml",
+    "service": "jekyll",
+    "shutdownAction": "stopContainer",
+    "forwardPorts": [
+        4000,
+        35729
+    ],
+    "workspaceFolder": "/srv/jekyll"
+}
